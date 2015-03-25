@@ -1,0 +1,44 @@
+<header class="title-bar-c">
+  <div class="title-bar">
+   <div class="tb-i tb-nav-trigger">
+      <i id="navTriggerBtn" class="fa fa-bars" data-state="0"></i>
+    </div>
+    <div class="tb-i tb-logo">
+      <img class="tb-logo-img" src="/img/blog-logo.png">
+    </div>
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="tb-i tb-search">
+      <input class="tb-search-i" type="text" name="q" placeholder="search and find">
+      <input type="hidden" name="q" value="site:<%= config.url %>">
+      <i class="fa fa-search"></i>
+    </form>
+    <div id="navActions" class="tb-i tb-action collapse">
+      <div class="tb-nav">
+        <a href="/">
+          <em class="tb-icon fa fa-home"></em>
+          <em class="tb-nav-s">Home</em>
+        </a>
+      </div>
+      <div class="tb-nav">
+        <a href="<%- theme.rss %>">
+          <em class="tb-icon fa fa-rss"></em>
+          <em class="tb-nav-s">RSS</em>
+        </a>
+      </div>
+      <div id="tb-nav-divider" class="tb-nav">
+          <i></i>
+      </div>
+      <div id="tb-nav-email" class="tb-nav">
+          <a href="mailto:<%= config.email %>">
+              <em class="tb-icon fa fa-envelope"></em>
+              <em class="tb-nav-s">E-mail</em>
+          </a>
+      </div>
+      <div id="tb-nav-about" class="tb-nav">
+          <a href="<%= config.about %>">
+              <em class="tb-icon fa fa-user"></em>
+              <em class="tb-nav-s">About</em>
+          </a>
+      </div>
+    </div>
+  </div>
+</header>

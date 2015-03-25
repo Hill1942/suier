@@ -1,0 +1,140 @@
+.title-bar-c
+  height: 48px
+  width: 100%
+  background-color: #263238
+  position: fixed
+  z-index: 1000
+  @media screen and (min-width: 768px)
+    height: 60px;
+  
+.title-bar
+  width: 1170px
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+  
+.tb-i
+  float: left
+  
+.tb-logo
+   display: none;
+   @media screen and (min-width: 768px)
+     display: block;
+     
+.tb-logo-img
+  margin: 5px 10px
+  
+.tb-search
+  display: none;
+  margin: 14px 15px;
+  position: relative;
+  @media screen and (min-width: 768px)
+     display: block;
+  
+.tb-search i
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  color: #ACB5B1;
+  
+.tb-search-i
+  width: 360px
+  border: 1px solid #80CBC4
+  margin: 0
+  padding: 3px 10px
+  height: 24px
+  outline: none
+  font-size: 16px
+  background-color: #37474F
+  color: #B5B5B5
+  
+.collapse
+  display: none;
+  @media screen and (min-width: 992px)
+    display: block;
+  
+.tb-action
+  height: 100%
+  left: 0
+  position: fixed
+  top: 48px
+  background-color: #263238
+  @media screen and (min-width: 768px)
+    right: 0
+    left: auto
+    top: 60px
+    position: absolute
+  @media screen and (min-width: 992px)
+    height: 36px;
+    margin: 20px 15px 4px 15px;
+    display: block;
+    top: 0px;
+  
+.tb-icon
+  text-decoration: none;
+  font-size: 28px;
+  color: #80CBC4;
+  
+.tb-nav-trigger
+  display: block;
+  color: color-light-grey;
+  font-size: 24px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  @media screen and (min-width: 768px)
+    left: auto;
+    right: 18px;
+  @media screen and (min-width: 992px)
+    display: none;
+  i
+    cursor: pointer;
+  
+.tb-nav
+  display: block;
+  clear: both;
+  padding: 10px 20px;
+  width: 135px;
+  background-color: #263238;
+  margin: 0;
+  position: relative;
+  @media screen and (min-width: 992px)
+    clear: none
+    float: left
+    padding: 0 12px
+    cursor: pointer
+    width: auto
+  
+.tb-nav > a
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  
+.tb-nav-s
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-left: 6px;
+  font-size: 16px;
+  color: #B5B5B5;
+  
+#tb-nav-divider
+  display: none;
+  padding: 0;
+  @media screen and (min-width: 992px)
+    display: block;
+  i
+    display: inline-block;
+    height: 20px;
+    border-right: 1px solid #D8E0E4;
+    vertical-align: middle;
+    margin-bottom: -5px;
+    margin-left: 30px;
+    margin-right: 10px;
+  
+#tb-nav-email .tb-nav-s
+#tb-nav-about .tb-nav-s
+  @media screen and (min-width: 992px)
+    display: none
+    

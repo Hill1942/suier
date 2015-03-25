@@ -1,0 +1,13 @@
+<%- partial('_partial/head') %>
+<body>
+  <%- partial('_partial/title-bar', null, {cache: !config.relative_link}) %>
+  <div class="framework-c">
+    <div class="framework">
+      <section class="content"><%- body %></section>
+      <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    </div>
+  </div>
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/after-footer') %>
+</body>
+</html>

@@ -1,0 +1,76 @@
+@import "nib"
+@import "_variables"
+@import "_util/mixin"
+@import "_util/grid"
+@import "_util/font"
+
+global-reset()
+
+input, button
+  margin: 0
+  padding: 0
+  &::-moz-focus-inner
+    border: 0
+    padding: 0
+
+body
+  margin: 0;
+  padding: 0;
+  background-color: #37474F;
+  font-family: Avenir,Lucida Grande,Calibri,Trebuchet MS,Helvetica,Arial,Hiragino Sans GB,WenQuanYi Micro Hei,STHeiti,Microsoft Jhenghei,Nanum Gothic, sans-serif;
+
+.framework-c
+  padding-top: 48px;
+  @media screen and (min-width: 768px)
+    padding-top: 60px;
+  
+.framework
+  display: table;
+  @media screen and (min-width: 768px)
+    width: 625px;
+    margin-left: auto;
+    margin-right: auto;
+  @media screen and (min-width: 992px)
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    
+.content
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px)
+    width: 625px;
+    float: left;
+    
+.sidebar-c
+  display: none;
+  @media screen and (min-width: 768px)
+    width: 230px;
+    height: 400px;
+    float: left;
+    margin-left: 30px;
+  @media screen and (min-width: 992px)
+    display: block;
+    
+.footer-c
+  display: block;
+
+.left, .alignleft
+  float: left
+
+.right, .alignright
+  float: right
+
+.clear
+  clear: both
+
+@import "_extend"
+@import "_partial/title-bar"
+@import "_partial/article"
+@import "_partial/comment"
+@import "_partial/archive"
+@import "_partial/footer"
+@import "_partial/highlight"
+@import "_partial/mobile"
+@import "_partial/sidebar"
